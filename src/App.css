@@ -1,38 +1,136 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* contact form css */
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto auto auto auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-mcontainer{
+  margin: auto;
+  margin: 20px;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* view css */
+h2, h3{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Style for table headers */
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  text-align: center;
+
+
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for table cells */
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+
+}
+
+/* Style for table cells on small screens */
+@media only screen and (max-width: 600px) {
+  /* Hide table headers on small screens */
+  th {
+    display: none;
+  }
+  /* Display table cells as block elements */
+  td {
+    display: block;
+    text-align: left;
+  }
+  /* Add some padding between table rows */
+  tr {
+    margin-bottom: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.edit-button{
+  border-radius: 8px;
+  background-color: #0056b3;
+  padding:8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 130px;
+
+}
+.edit-button:hover{
+  background-color: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.add-button{
+  border-radius: 8px;
+  background-color: green;
+  padding:8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 130px;
 }
+.edit-count{
+  border-radius: 8px;
+  background-color: purple;
+  padding:8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.add-p {
+  text-align: end;
+  margin: 20px;
+}
+.table-contaner{
+  margin: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

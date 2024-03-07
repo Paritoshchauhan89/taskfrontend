@@ -1,0 +1,47 @@
+.app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .menu-content {
+    padding: 10px;
+  }
+  
+  .menu-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .main-content {
+    background-color: #fff;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+  }
+  
+  .resize-handle {
+    cursor: col-resize;
+    width: 6px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu-content {
+    width: calc(100% - 6px);
+    height: 100%;
+    overflow-y: auto;
+  }
+  
