@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import ContactForm from './components/ContcatForm'
 import ViewContact from './components/ViewContact'
+import EditForm from './components/EditForm'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
   <Route path='/add-contact' element={<ContactForm/>}/>
   <Route path='/view-contact' element={<ViewContact/>}/>
   <Route path='*' element={<Home/>}/>
+  <Route path='/update-contact' element={<EditForm/>}/>
 </Routes>
 </BrowserRouter>
     </>

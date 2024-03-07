@@ -1,0 +1,23 @@
+# Build settings
+[build]
+  # Publish directory (where the static site files are located)
+  publish = "public"
+  
+  # Build command (how to build the site)
+  command = "npm run build"
+  
+  # Functions directory (where serverless functions are located)
+  functions = "functions"
+  
+  # Environment variables
+  [build.environment]
+    NODE_VERSION = "14"
+
+# Redirects and Rewrites
+[[redirects]]
+  from = "/old-url"
+  to = "/new-url"
+  status = 301
+  force = true
+
+

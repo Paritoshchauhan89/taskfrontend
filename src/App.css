@@ -35,6 +35,7 @@
   cursor: pointer;
 }
 
+
 .form-mcontainer{
   margin: auto;
   margin: 20px;
@@ -53,7 +54,10 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-
+.table-container{
+  margin: auto;
+  margin: 20px;
+}
 /* Style for table headers */
 th {
   background-color: #f2f2f2;

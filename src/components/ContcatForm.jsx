@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../App.css'; // Import CSS file for styling
 import { API_URL } from './Api';
+import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -42,7 +43,10 @@ const ContactForm = () => {
     };
 
     return (
+        
    <div className="form-mcontainer">
+                <Link to='/'><button className='add-button'>Home Page</button></Link>
+
          <div className="form-container">
             <h2>Add New Contact</h2>
             <form onSubmit={handleSubmit} className="contact-form">
@@ -54,6 +58,8 @@ const ContactForm = () => {
                 <button type="submit" className="submit-btn">Save</button>
             </form>
         </div>
+           <Link to='/view-contact'><button className='edit-button'>Show Contacts</button></Link>
+
    </div>
     );
 };
